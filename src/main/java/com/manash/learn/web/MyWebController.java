@@ -11,7 +11,7 @@ public class MyWebController {
 
 	@GetMapping("/welcome/{name}")
 	public String welcomeMsg(@PathVariable("name") String name) {
-		return "<center><h1>" + name + ",  Welcome to spring boot web application ....</h1></center> " + new Date();
+		return "<center><h1>Hello ," + name + ", Dockerized spring boot web application running successfully....</h1></center> " + new Date();
 	}
 
 }
